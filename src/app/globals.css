@@ -2042,7 +2042,7 @@ section {
   }
 
   .hero {
-    padding: 8rem 0 3rem;
+    padding: 6rem 0 2.5rem;
   }
   .hero-headline {
     font-size: 2.5rem;
@@ -2058,12 +2058,29 @@ section {
     width: 100%;
   }
 
+  .hero-screenshot {
+    -webkit-mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 88%, transparent 100%);
+  }
+
   .section-heading {
     font-size: 2rem;
   }
 
   .nav-links .nav-link {
     display: none;
+  }
+
+  .property-heading {
+    font-size: 1.75rem;
+  }
+
+  .alpha-amount {
+    font-size: 2.5rem;
+  }
+
+  .alpha-modal {
+    padding: 1.5rem;
   }
 
   .stats-grid {
@@ -2186,5 +2203,17 @@ section {
   .fc-row {
     grid-template-columns: 1fr;
     gap: 0.5rem;
+  }
+  .alpha-amount {
+    font-size: 2rem;
+  }
+  .alpha-card {
+    padding: 1.25rem;
+  }
+  .property-heading {
+    font-size: 1.5rem;
+  }
+  .alpha-modal {
+    padding: 1.25rem;
   }
 }
