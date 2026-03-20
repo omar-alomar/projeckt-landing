@@ -49,15 +49,15 @@ export default function Home() {
           <div className="bento-row">
             <ScrollReveal>
               <div className="bento-card">
-                <h3 className="bento-title">Track every project</h3>
+                <h3 className="bento-title">Dashboard at a glance</h3>
                 <p className="bento-desc">
-                  MBA numbers, CO files, managers, and milestone deadlines
-                  with urgency color-coding &mdash; all in one table.
+                  Active tasks, urgent items, completion rate, upcoming
+                  milestones, and recent activity &mdash; one view.
                 </p>
                 <div className="bento-visual">
                   <img
-                    src="/screenshots/projects.png"
-                    alt="Projects table with milestones and urgency colors"
+                    src="/screenshots/dashboard.png"
+                    alt="Dashboard with KPIs, milestones, and activity feed"
                   />
                 </div>
               </div>

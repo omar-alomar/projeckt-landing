@@ -34,8 +34,8 @@ export default function Hero() {
 
         <div className="mockup-wrapper">
           <img
-            src="/screenshots/dashboard.png"
-            alt="Projeckt dashboard showing active tasks, urgent items, and completion rate"
+            src="/screenshots/projects.png"
+            alt="Projeckt projects table with MBA numbers, CO files, and milestone urgency colors"
             className="hero-screenshot"
           />
         </div>
