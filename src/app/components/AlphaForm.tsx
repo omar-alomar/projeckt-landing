@@ -5,6 +5,7 @@ import { useState } from 'react';
 export default function AlphaForm({ onClose }: { onClose: () => void }) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [mouseDownOnOverlay, setMouseDownOnOverlay] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -33,8 +34,12 @@ export default function AlphaForm({ onClose }: { onClose: () => void }) {
   }
 
   return (
-    <div className="alpha-overlay" onClick={onClose}>
-      <div className="alpha-modal" onClick={(e) => e.stopPropagation()}>
+    <div
+      className="alpha-overlay"
+      onMouseDown={(e) => setMouseDownOnOverlay(e.target === e.currentTarget)}
+      onMouseUp={(e) => { if (mouseDownOnOverlay && e.target === e.currentTarget) onClose(); }}
+    >
+      <div className="alpha-modal">
         {submitted ? (
           <div className="alpha-success">
             <div className="alpha-check">&#10003;</div>
