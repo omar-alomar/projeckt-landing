@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 
 export default function Lightbox({
   src,
@@ -12,6 +13,20 @@ export default function Lightbox({
   className?: string;
 }) {
   const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+      return () => {
+        document.body.style.overflow = '';
+      };
+    }
+  }, [open]);
 
   return (
     <>
@@ -21,11 +36,14 @@ export default function Lightbox({
         className={className}
         onClick={() => setOpen(true)}
       />
-      {open && (
-        <div className="lightbox-overlay" onClick={() => setOpen(false)}>
-          <img src={src} alt={alt} className="lightbox-img" />
-        </div>
-      )}
+      {open &&
+        mounted &&
+        createPortal(
+          <div className="lightbox-overlay" onClick={() => setOpen(false)}>
+            <img src={src} alt={alt} className="lightbox-img" />
+          </div>,
+          document.body
+        )}
     </>
   );
 }
