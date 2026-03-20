@@ -2,6 +2,7 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Pricing from './components/Pricing';
 import ScrollReveal from './components/ScrollReveal';
+import Lightbox from './components/Lightbox';
 
 export default function Home() {
   return (
@@ -29,11 +30,15 @@ export default function Home() {
                 </p>
                 <p className="property-sub">
                   No more switching between SDAT, county GIS, and
-                  DataExplorer. It&apos;s all here.
+                  DataExplorer. It&apos;s all here.*
+                </p>
+                <p className="property-note">
+                  * Additional data sources and jurisdictions available on
+                  request.
                 </p>
               </div>
               <div className="property-visual">
-                <img
+                <Lightbox
                   src="/screenshots/property-lookup.gif"
                   alt="Property lookup pulling owner data, zoning, and environmental info from an address"
                 />
@@ -55,12 +60,10 @@ export default function Home() {
                   milestones, and recent activity &mdash; one view.
                 </p>
                 <div className="bento-visual">
-                  <a href="/screenshots/dashboard.png" target="_blank" rel="noopener">
-                    <img
-                      src="/screenshots/dashboard.png"
-                      alt="Dashboard with KPIs, milestones, and activity feed"
-                    />
-                  </a>
+                  <Lightbox
+                    src="/screenshots/dashboard.png"
+                    alt="Dashboard with KPIs, milestones, and activity feed"
+                  />
                 </div>
               </div>
             </ScrollReveal>
@@ -73,12 +76,10 @@ export default function Home() {
                   who&apos;s available &mdash; at a glance.
                 </p>
                 <div className="bento-visual">
-                  <a href="/screenshots/team-board.png" target="_blank" rel="noopener">
-                    <img
-                      src="/screenshots/team-board.png"
-                      alt="Team board showing tasks per person"
-                    />
-                  </a>
+                  <Lightbox
+                    src="/screenshots/team-board.png"
+                    alt="Team board showing tasks per person"
+                  />
                 </div>
               </div>
             </ScrollReveal>
@@ -91,12 +92,10 @@ export default function Home() {
                   resizable panels, one view.
                 </p>
                 <div className="bento-visual">
-                  <a href="/screenshots/my-tasks.png" target="_blank" rel="noopener">
-                    <img
-                      src="/screenshots/my-tasks.png"
-                      alt="My tasks view with resizable panels"
-                    />
-                  </a>
+                  <Lightbox
+                    src="/screenshots/my-tasks.png"
+                    alt="My tasks view with resizable panels"
+                  />
                 </div>
               </div>
             </ScrollReveal>

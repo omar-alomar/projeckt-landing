@@ -15,7 +15,7 @@ const plans = [
       'Basic milestones',
       'Email support',
     ],
-    cta: 'Start Free Trial',
+    cta: 'Join the Alpha',
     ctaClass: 'btn btn-outline btn-md',
     featured: false,
   },
@@ -27,13 +27,13 @@ const plans = [
       'Unlimited projects',
       'Unlimited team members',
       'Team dashboard',
+      'Property data lookup',
       'Advanced milestones & urgency',
       'Real-time notifications',
       'Client management',
-      'Mobile API access',
       'Priority support',
     ],
-    cta: 'Start Free Trial',
+    cta: 'Join the Alpha',
     ctaClass: 'btn btn-primary btn-md',
     featured: true,
   },
@@ -43,13 +43,13 @@ const plans = [
     annual: 79,
     features: [
       'Everything in Pro',
+      'Custom data integrations',
       'SSO / SAML authentication',
       'Audit log & compliance',
       'Custom onboarding',
-      'SLA guarantee',
       'Dedicated success manager',
     ],
-    cta: 'Contact Sales',
+    cta: 'Contact Us',
     ctaClass: 'btn btn-outline btn-md',
     featured: false,
   },
@@ -63,10 +63,14 @@ export default function Pricing() {
       <div className="container">
         <ScrollReveal>
           <div className="pricing-header">
-            <p className="section-label">Pricing</p>
+            <p className="section-label">Alpha pricing</p>
             <h2 className="section-heading">
-              Simple pricing. No surprises.
+              Lock in founding member rates.
             </h2>
+            <p className="pricing-sub">
+              Prices will increase at general release. Alpha members keep
+              their rate forever.
+            </p>
             <div className="pricing-toggle">
               <button
                 className={`pricing-toggle-option ${!annual ? 'active' : ''}`}
@@ -92,7 +96,7 @@ export default function Pricing() {
                 className={`pricing-card ${plan.featured ? 'featured' : ''}`}
               >
                 {plan.featured && (
-                  <span className="pricing-badge">Most Popular</span>
+                  <span className="pricing-badge">Recommended</span>
                 )}
                 <div className="pricing-plan-name">{plan.name}</div>
                 <div className="pricing-price">
@@ -119,8 +123,8 @@ export default function Pricing() {
 
         <ScrollReveal>
           <p className="pricing-guarantee">
-            <span>&#10003;</span> 30-day money-back guarantee on all annual
-            plans. Monthly plans cancel anytime.
+            <span>&#10003;</span> Free during alpha. No credit card required.
+            Founding members lock in these rates at launch.
           </p>
         </ScrollReveal>
       </div>

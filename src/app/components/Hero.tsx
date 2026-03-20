@@ -1,3 +1,5 @@
+import Lightbox from './Lightbox';
+
 export default function Hero() {
   return (
     <section className="hero">
@@ -21,7 +23,7 @@ export default function Hero() {
 
         <div className="hero-cta-group">
           <a href="#" className="btn btn-primary btn-lg">
-            Get Started Free
+            Join the Alpha
           </a>
           <a href="#pricing" className="btn btn-ghost btn-lg">
             See Pricing <span className="arrow">&rarr;</span>
@@ -29,11 +31,12 @@ export default function Hero() {
         </div>
 
         <p className="hero-microcopy">
-          No credit card required &middot; 14-day trial
+          Founding member pricing &middot; Shape the roadmap &middot; Free
+          during alpha
         </p>
 
         <div className="mockup-wrapper">
-          <img
+          <Lightbox
             src="/screenshots/projects.png"
             alt="Projeckt projects table with MBA numbers, CO files, and milestone urgency colors"
             className="hero-screenshot"
