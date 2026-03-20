@@ -42,7 +42,8 @@ export default function Pricing() {
                   <li>Advanced milestones &amp; urgency tracking</li>
                   <li>Real-time notifications &amp; @mentions</li>
                   <li>Client management</li>
-                  <li>Mobile API access</li>
+                  <li>SSO / Microsoft login</li>
+                  <li>Mobile app access (coming soon)</li>
                   <li>Direct input on the roadmap</li>
                   <li>Priority support</li>
                 </ul>
@@ -60,17 +61,17 @@ export default function Pricing() {
               <div className="launch-tier">
                 <span className="launch-tier-name">Starter</span>
                 <span className="launch-tier-price">$12/user/mo</span>
-                <span className="launch-tier-desc">Basic features, limited projects</span>
+                <span className="launch-tier-desc">Up to 12 projects, basic milestones</span>
               </div>
               <div className="launch-tier">
                 <span className="launch-tier-name">Pro</span>
                 <span className="launch-tier-price">$29/user/mo</span>
-                <span className="launch-tier-desc">Full platform, property lookup</span>
+                <span className="launch-tier-desc">Unlimited projects, property lookup, SSO</span>
               </div>
               <div className="launch-tier">
                 <span className="launch-tier-name">Enterprise</span>
                 <span className="launch-tier-price">Custom</span>
-                <span className="launch-tier-desc">SSO, audit log, custom integrations</span>
+                <span className="launch-tier-desc">Custom integrations, dedicated onboarding, SLA</span>
               </div>
             </div>
             <p className="launch-pricing-note">
