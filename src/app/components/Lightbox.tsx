@@ -34,6 +34,7 @@ export default function Lightbox({
         src={src}
         alt={alt}
         className={className}
+        loading="lazy"
         onClick={() => setOpen(true)}
       />
       {open &&

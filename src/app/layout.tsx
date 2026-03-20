@@ -16,9 +16,35 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Projeckt — Project management, sharpened.',
+  title: 'Projeckt — Project management for engineering firms & land developers',
   description:
-    'One workspace for your projects, tasks, milestones, and team. Stop managing chaos. Start shipping.',
+    'Track projects, milestones, and property data in one workspace. Built for civil engineering firms and land developers. Built-in property lookup, team dashboards, and milestone tracking.',
+  keywords: [
+    'project management for engineering firms',
+    'civil engineering project tracking',
+    'land development project management',
+    'property data lookup',
+    'construction project management',
+    'engineering firm software',
+  ],
+  metadataBase: new URL('https://projeckt.app'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Projeckt — Project management for teams that build',
+    description:
+      'Track projects, milestones, and property data in one workspace. Built for civil engineering firms and land developers.',
+    url: 'https://projeckt.app',
+    siteName: 'Projeckt',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Projeckt — Project management for teams that build',
+    description:
+      'Track projects, milestones, and property data in one workspace. Built for engineering firms.',
+  },
   icons: {
     icon: [
       {

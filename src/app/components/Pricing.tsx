@@ -75,7 +75,7 @@ export default function Pricing() {
               </div>
             </div>
             <p className="launch-pricing-note">
-              Alpha members keep $10/user/mo with full access. No matter what.
+              Alpha members save 65% &mdash; $10/user/mo with full access, forever.
             </p>
           </div>
         </ScrollReveal>

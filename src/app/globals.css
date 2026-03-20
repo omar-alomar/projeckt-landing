@@ -1898,6 +1898,13 @@ section {
   gap: 2rem;
 }
 
+.footer-trust {
+  font-size: 0.75rem;
+  color: var(--text-faint);
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
 .footer-bottom {
   padding-top: 1.5rem;
   border-top: 1px solid var(--border-subtle);

@@ -4,9 +4,31 @@ import Pricing from './components/Pricing';
 import ScrollReveal from './components/ScrollReveal';
 import Lightbox from './components/Lightbox';
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'SoftwareApplication',
+  name: 'Projeckt',
+  applicationCategory: 'BusinessApplication',
+  operatingSystem: 'Web',
+  description:
+    'Project management for civil engineering firms and land developers. Built-in property data lookup, milestone tracking, and team dashboards.',
+  url: 'https://projeckt.app',
+  offers: {
+    '@type': 'Offer',
+    price: '10.00',
+    priceCurrency: 'USD',
+    priceValidUntil: '2027-12-31',
+    description: 'Alpha rate — all features, locked in forever',
+  },
+};
+
 export default function Home() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Navigation />
       <Hero />
 
@@ -125,6 +147,9 @@ export default function Home() {
                 Terms
               </a>
             </div>
+          </div>
+          <div className="footer-trust">
+            US-hosted &middot; Encrypted at rest and in transit &middot; Admin-controlled access only
           </div>
           <div className="footer-bottom">
             <p>&copy; 2026 Projeckt</p>
