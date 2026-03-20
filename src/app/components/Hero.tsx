@@ -32,8 +32,8 @@ export default function Hero() {
         </div>
 
         <p className="hero-microcopy">
-          Founding member pricing &middot; Shape the roadmap &middot; Free
-          during alpha
+          $10/user/mo &middot; Every feature included &middot; Rate locked in
+          forever
         </p>
 
         <div className="mockup-wrapper">

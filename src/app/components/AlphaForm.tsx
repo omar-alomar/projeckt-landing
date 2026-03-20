@@ -58,7 +58,7 @@ export default function AlphaForm({ onClose }: { onClose: () => void }) {
             </button>
             <h3 className="alpha-title">Join the Alpha</h3>
             <p className="alpha-desc">
-              Free access. Founding member pricing locked in at launch.
+              $10/user/mo &mdash; every feature, locked in forever.
             </p>
             <form onSubmit={handleSubmit} className="alpha-form">
               <div className="alpha-field">
