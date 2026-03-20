@@ -55,10 +55,12 @@ export default function Home() {
                   milestones, and recent activity &mdash; one view.
                 </p>
                 <div className="bento-visual">
-                  <img
-                    src="/screenshots/dashboard.png"
-                    alt="Dashboard with KPIs, milestones, and activity feed"
-                  />
+                  <a href="/screenshots/dashboard.png" target="_blank" rel="noopener">
+                    <img
+                      src="/screenshots/dashboard.png"
+                      alt="Dashboard with KPIs, milestones, and activity feed"
+                    />
+                  </a>
                 </div>
               </div>
             </ScrollReveal>
@@ -71,10 +73,12 @@ export default function Home() {
                   who&apos;s available &mdash; at a glance.
                 </p>
                 <div className="bento-visual">
-                  <img
-                    src="/screenshots/team-board.png"
-                    alt="Team board showing tasks per person"
-                  />
+                  <a href="/screenshots/team-board.png" target="_blank" rel="noopener">
+                    <img
+                      src="/screenshots/team-board.png"
+                      alt="Team board showing tasks per person"
+                    />
+                  </a>
                 </div>
               </div>
             </ScrollReveal>
@@ -87,10 +91,12 @@ export default function Home() {
                   resizable panels, one view.
                 </p>
                 <div className="bento-visual">
-                  <img
-                    src="/screenshots/my-tasks.png"
-                    alt="My tasks view with resizable panels"
-                  />
+                  <a href="/screenshots/my-tasks.png" target="_blank" rel="noopener">
+                    <img
+                      src="/screenshots/my-tasks.png"
+                      alt="My tasks view with resizable panels"
+                    />
+                  </a>
                 </div>
               </div>
             </ScrollReveal>
