@@ -11,91 +11,72 @@ export default function Pricing() {
           <div className="pricing-header">
             <p className="section-label">Alpha pricing</p>
             <h2 className="section-heading">
-              Every feature. One price.
+              Get everything. Pay less. Forever.
             </h2>
-            <p className="pricing-sub">
-              Alpha members get the full platform &mdash; everything that
-              will be split across tiers at launch &mdash; for one flat
-              rate. Locked in forever.
-            </p>
           </div>
         </ScrollReveal>
 
-        <div className="pricing-grid pricing-grid-single">
-          <ScrollReveal>
-            <div className="pricing-card pricing-card-launch">
-              <div className="pricing-card-header-muted">At launch</div>
-              <div className="pricing-plan-name">Starter</div>
-              <div className="pricing-price">
-                <span className="pricing-amount muted">$12</span>
-                <span className="pricing-period">/user/mo</span>
+        <ScrollReveal>
+          <div className="alpha-card">
+            <div className="alpha-card-inner">
+              <div className="alpha-card-left">
+                <span className="alpha-badge">Alpha Rate</span>
+                <div className="alpha-price">
+                  <span className="alpha-amount">$10</span>
+                  <span className="alpha-period">/user/mo</span>
+                </div>
+                <p className="alpha-note">
+                  Every feature. No limits. This rate is locked in
+                  forever &mdash; it won&apos;t increase at launch.
+                </p>
+                <CTAButton className="btn btn-primary btn-lg">
+                  Join the Alpha
+                </CTAButton>
               </div>
-              <ul className="pricing-features">
-                <li>5 projects</li>
-                <li>10 team members</li>
-                <li>Basic milestones</li>
-                <li className="pricing-feature-missing">No property lookup</li>
-                <li className="pricing-feature-missing">No team dashboard</li>
-                <li className="pricing-feature-missing">No real-time notifications</li>
-              </ul>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={100}>
-            <div className="pricing-card featured">
-              <span className="pricing-badge">Alpha Rate</span>
-              <div className="pricing-plan-name">Alpha</div>
-              <div className="pricing-price">
-                <span className="pricing-amount">$10</span>
-                <span className="pricing-period">/user/mo</span>
+              <div className="alpha-card-right">
+                <h4 className="alpha-includes-title">Everything included:</h4>
+                <ul className="alpha-features">
+                  <li>Unlimited projects &amp; team members</li>
+                  <li>Property data lookup</li>
+                  <li>Team dashboard &amp; workload view</li>
+                  <li>Advanced milestones &amp; urgency tracking</li>
+                  <li>Real-time notifications &amp; @mentions</li>
+                  <li>Client management</li>
+                  <li>Mobile API access</li>
+                  <li>Direct input on the roadmap</li>
+                  <li>Priority support</li>
+                </ul>
               </div>
-              <p className="pricing-alpha-note">
-                Everything. No limits. Locked in forever.
-              </p>
-              <ul className="pricing-features">
-                <li>Unlimited projects</li>
-                <li>Unlimited team members</li>
-                <li>Property data lookup</li>
-                <li>Team dashboard</li>
-                <li>Advanced milestones &amp; urgency</li>
-                <li>Real-time notifications</li>
-                <li>Client management</li>
-                <li>Priority support</li>
-                <li>Shape the roadmap</li>
-              </ul>
-              <CTAButton className="btn btn-primary btn-md">
-                Join the Alpha
-              </CTAButton>
             </div>
-          </ScrollReveal>
-
-          <ScrollReveal delay={200}>
-            <div className="pricing-card pricing-card-launch">
-              <div className="pricing-card-header-muted">At launch</div>
-              <div className="pricing-plan-name">Pro</div>
-              <div className="pricing-price">
-                <span className="pricing-amount muted">$29</span>
-                <span className="pricing-period">/user/mo</span>
-              </div>
-              <ul className="pricing-features">
-                <li>Unlimited projects</li>
-                <li>Unlimited team members</li>
-                <li>Property data lookup</li>
-                <li>Team dashboard</li>
-                <li>Advanced milestones &amp; urgency</li>
-                <li>Real-time notifications</li>
-                <li>Client management</li>
-                <li>Priority support</li>
-              </ul>
-            </div>
-          </ScrollReveal>
-        </div>
+          </div>
+        </ScrollReveal>
 
         <ScrollReveal>
-          <p className="pricing-guarantee">
-            Alpha members pay $10/user/mo for what will cost $29+
-            at launch. Your rate never changes.
-          </p>
+          <div className="launch-pricing">
+            <p className="launch-pricing-label">
+              At launch, these features will be split across tiers:
+            </p>
+            <div className="launch-tiers">
+              <div className="launch-tier">
+                <span className="launch-tier-name">Starter</span>
+                <span className="launch-tier-price">$12/user/mo</span>
+                <span className="launch-tier-desc">Basic features, limited projects</span>
+              </div>
+              <div className="launch-tier">
+                <span className="launch-tier-name">Pro</span>
+                <span className="launch-tier-price">$29/user/mo</span>
+                <span className="launch-tier-desc">Full platform, property lookup</span>
+              </div>
+              <div className="launch-tier">
+                <span className="launch-tier-name">Enterprise</span>
+                <span className="launch-tier-price">Custom</span>
+                <span className="launch-tier-desc">SSO, audit log, custom integrations</span>
+              </div>
+            </div>
+            <p className="launch-pricing-note">
+              Alpha members keep $10/user/mo with full access. No matter what.
+            </p>
+          </div>
         </ScrollReveal>
       </div>
     </section>
