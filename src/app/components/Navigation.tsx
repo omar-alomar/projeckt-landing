@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import CTAButton from './CTAButton';
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,12 +25,9 @@ export default function Navigation() {
           <a href="#pricing" className="nav-link">
             Pricing
           </a>
-          <a href="#faq" className="nav-link">
-            FAQ
-          </a>
-          <a href="#" className="btn btn-primary btn-sm">
-            Start Free Trial
-          </a>
+          <CTAButton className="btn btn-primary btn-sm">
+            Join the Alpha
+          </CTAButton>
         </div>
       </div>
     </nav>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ScrollReveal from './ScrollReveal';
+import CTAButton from './CTAButton';
 
 const plans = [
   {
@@ -113,9 +114,9 @@ export default function Pricing() {
                     <li key={f}>{f}</li>
                   ))}
                 </ul>
-                <a href="#" className={plan.ctaClass} style={{ width: '100%' }}>
+                <CTAButton className={`${plan.ctaClass}`}>
                   {plan.cta}
-                </a>
+                </CTAButton>
               </div>
             </ScrollReveal>
           ))}

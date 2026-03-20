@@ -1,4 +1,5 @@
 import Lightbox from './Lightbox';
+import CTAButton from './CTAButton';
 
 export default function Hero() {
   return (
@@ -22,9 +23,9 @@ export default function Hero() {
         </p>
 
         <div className="hero-cta-group">
-          <a href="#" className="btn btn-primary btn-lg">
+          <CTAButton className="btn btn-primary btn-lg">
             Join the Alpha
-          </a>
+          </CTAButton>
           <a href="#pricing" className="btn btn-ghost btn-lg">
             See Pricing <span className="arrow">&rarr;</span>
           </a>
