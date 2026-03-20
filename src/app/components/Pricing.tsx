@@ -71,7 +71,7 @@ export default function Pricing() {
               <div className="launch-tier">
                 <span className="launch-tier-name">Enterprise</span>
                 <span className="launch-tier-price">Custom</span>
-                <span className="launch-tier-desc">Custom integrations, dedicated onboarding, SLA</span>
+                <span className="launch-tier-desc">Custom integrations, CMMC compliance support, audit logs, SLA</span>
               </div>
             </div>
             <p className="launch-pricing-note">
